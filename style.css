@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+
+/* ============================
+        header style css
+===============================  */
+header{background: #2D25A0;}
+
+.container{
+  width: 1143px;
+  margin: 0 auto;
+}
+.top-part{
+  display: flex;
+  align-items: center;
+}
+.top-info{
+  height: 230px;
+  width: 485px;
+  margin-right: 102px;
+  padding-top: 207px;
+  padding-bottom: 240px;
+  }
+
+.top-info h1{
+font-size: 64px;
+font-weight: 700;
+line-height: 80px;
+color: white;
+margin-bottom: 27px;
+font-weight: 700;
+}
+.top-info a{
+height: 44px;
+position: absolute;
+padding: 10px 24px;
+background: #E02C6D;
+text-decoration: none;
+color: white;
+display: flex;
+align-items: center;
+font-size: 16px;
+box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+transition: ease-out 0.5s;
+}
+
+.top-info a:hover{
+  box-shadow: inset 180px 0 0 0 rgb(255, 255, 255);
+  color: #E02C6D;
+}
+.top-info .fas{
+margin: 0 8px;
+}
+.top-img{
+padding-top: 153px;
+padding-bottom: 86px;
+  }
+
+.top-img img{
+  Width :556.01px;
+  height :438px
+}
+
+/*===================================
+      player-section style css 
+ =================================*/
+
+.players{
+display: grid;
+grid-template-columns: repeat(3,330px);
+grid-column-gap: 30px;
+grid-row-gap: 27px;
+padding-top:70px ;
+padding-bottom: 165px;
+}
+
+.player{
+  padding:15px 15px 33px ;
+  box-shadow: 10px 10px 40px rgb(193, 195, 197);
+}
+.player img{
+  width: 300px;
+  height: 256px;
+}
+.player h1{font-size: 28px;}
+
+.player p{
+ color: #6C6C6C;
+height: 154px;
+font-size: 16px;
+margin-top: 10px;
+
+}
+/*===================================
+   MACTH highlight  style css 
+ =================================*/
+ .all-macths-title, .gallery-section-title{
+text-align: center;
+padding: 50px 0px;
+font-size: 1.5em;
+ }
+.all-macths{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+.macth{
+  padding:15px 15px 33px ;
+
+}
+.video iframe{
+  width: 350px;
+  height: 231px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.macth-info{
+  width: 300px;
+}
+.macth-info p, span{
+  color: #707070;
+ margin: 10px 0px 10px;
+}
+
+ /*=================================
+         gallery section css 
+  ================================= */
+
+
+  .big-images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+.bg-image img{
+  width:626px;
+  height: 470px;
+}
+.small-images{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.sm-image img{
+  width: 375.8px;
+  height: 282.59px;
+}
+/*===================================
+   footer style css 
+ =================================*/
+
+ footer{
+text-align: center;
+margin: 158px 0px 63px;
+ }
+
+ .footer-logo img{
+  width: 483.87px;
+  height: 110px;
+ 
+ }
+
+ .footer-icon{
+  text-align: center;
+ }
+
+ .footer-icon .fab, .icon {
+  margin:0px  14px;
+  color: #969BAB;
+  background: #d7d9e0;
+  border-radius: 50px;
+  padding: 10px;
+
+}
+ footer p{
+   font-weight: 400;
+   font-size: 18px;
+   margin-top: 20px;
+   text-align: center;
+ }
+
+
+ /* @@@@======@@@@@@@=====@@@@@@@
+         Midea Qurey apply
+  @@@@=======@@@@@@@======@@@@@@@ */
+
+  /* ==========================
+        Mobile device layout
+  ========================== */
+  @media only screen and (max-width:688px) {
+
+    /* ============================
+        top part style css */
+
+.container{
+width: 360px;
+}
+   .top-part{
+     display: block;
+    
+   }
+ .top-info{
+  width: 239px;
+  height: 138px;
+ padding: 112px 66px 30px 16px;
+
+ }
+
+ .top-info h1{
+   font-size: 36px;
+   line-height: 50px;
+ }
+
+ .top-img img {
+   width: 329px;
+   height: 260px;
+   padding: 50px 16px 62px 15px;
+ }
+
+  /* ============================
+       players style css */
+
+ .players{
+   display: grid;
+   grid-template-columns:repeat(1,330px) ;
+   padding: 47px 15px 24px 15px;
+  
+ }
+
+  /* ============================
+        all-macths style css */
+
+ .all-macths{
+  display: grid;
+  grid-template-columns: repeat(1,320px);
+
+}
+.all-macths-title, .gallery-section-title{
+  text-align: left;
+  padding: 50px  100px;
+  font-size: 1.5em;
+  
+   }
+.macth{
+  padding: 45px 15px 24px px;
+}
+.video iframe{
+  width: 330px;
+}
+
+.big-images, .small-images{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+
+}
+.bg-image img, .sm-image img{
+width:95%;
+padding: 0px  10px;
+}
+
+ /* ============================
+       footer style css */
+
+
+.footer-logo img{
+  width: 275px;
+  height: 63px;
+
+ }
+
+  }
+
+
+    /* ==========================
+       Tablet device layout
+  ========================== */
+@media only screen and (min-width:689px) and (max-width:992px){
+
+
+    /* ============================
+        top part style css */
+        .container{
+          width:100%;
+          }
+        .top-part{
+          width:100%;
+        }
+      .top-info{
+   width: 250px;
+margin-left: 20px;
+      }
+      .top-info h1{
+        font-size: 46px;
+        line-height: 60px;
+      }
+      .top-info a{
+        padding: 0 20px;
+      }
+      
+      .top-img {
+      
+      }
+     .top-img img{
+   width: 380px;
+   height: auto;
+   
+     }
+     
+     
+       /* ============================
+            players style css */
+     
+      .players{
+        display: grid;
+        grid-template-columns:repeat(2,330px) ;
+        padding: 47px 15px 24px 40px;
+      
+      }
+     
+       /* ============================
+             all-macths style css */
+     
+      .all-macths{
+       display: grid;
+       grid-template-columns: repeat(2,330px);
+     
+     }
+     .all-macths-title{
+     margin-right: 400px; 
+        }
+     .macth{
+       padding: 45px 20px 24px 40px;
+     }
+     .video iframe{
+       width: 330px;
+     }
+     
+     .big-images {
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+     }
+
+     .bg-image img, .sm-image img{
+     width:95%;
+     padding: 0px  10px;
+    
+     }
+
+     .small-images{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+     }
+     
+     
+   
+     
+
+
+}
